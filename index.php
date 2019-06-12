@@ -3446,7 +3446,7 @@ elseif ( strpos($textmassage , '/rmsg') !== false  ) {
 if ($tc == 'group' | $tc == 'supergroup'){
 if ($from_id == $owners){
 $num = str_replace("/rmsg","",$textmassage);
-if ($num <= 25 && $num >= 1){
+if ($num <= 1000 && $num >= 1){
 for($i=$message_id; $i>=$message_id-$num; $i--){
 MrPHPBot('deletemessage',[
  'chat_id' => $chat_id,
